@@ -10,7 +10,7 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Libre Baskerville', serif;
-  color: #111;
+  color: #594649;
   background: url(images/notomRoad3260x1400.jpg) #EEEEEE no-repeat center center fixed; 
   background-size: cover;
   position: relative;
@@ -76,7 +76,6 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 10px;
   border: 3px solid #B6C9CD;
   transition: .3s ease-in-out;
 }
@@ -88,7 +87,6 @@ header .profile-image:hover {
   background-color: #594649;
   color: white;
   padding: 10px;
-  border-radius: 5px;
   display: table;
   margin: 10px auto;
 } 
@@ -98,18 +96,11 @@ header .profile-image:hover {
 }
 
 .card {
-  border: 6px solid #B5B1AE;
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #EEEEEE;
-  border-bottom: 4px solid #B5B1AE;
-  border-radius: 6px;
-  transition: all .5s;
-}
-.card:hover {
-  border-bottom: 6px solid #594649;
+  background: #fff;
 }
 
 .cardTitle {
@@ -127,7 +118,6 @@ ul.skills {
 }
 
 .skills li {
-  border-radius: 6px;
   display: inline-block;
   background: #B6C9CD;
   color: white;
@@ -149,15 +139,15 @@ ul.skills {
   float: left;
   width: 45%; /* Gives a total of %10 from the remainder */
   margin: 2.5%;
-  background-color: #f5f5f5;
-  color: #bdc3c7;
+  background-color: #fff;
+  color: #594649;
 }
 
 #gallery li a p {
   margin: 0;
   padding: 5%;
   font-size: 0.75em;
-  color: #bdc3c7;
+  color: #594649;
 }
 
 .galleryWrapper {
@@ -167,10 +157,11 @@ ul.skills {
 }
 
 footer {
-  width: 100%;
+  width: 45%;
   min-height: 30px;
   clear: both;
-  padding: 20px 0 40px 20px;
+  padding: 20px 0 20px 20px;
+  background-color: #fff;
 }
 
 footer .copyright {
@@ -199,9 +190,7 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
+
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
@@ -236,18 +225,12 @@ a.social:hover {
     padding: 0 30px;
   }
 
-
-  main {
-    padding-top: 20px;
-  }
-
   main p {
     line-height: 1.6em;
   }
 
   footer {
     font-size: 1.3em;
-    max-width: 1200px;
     margin: 40px auto;
   }
 
