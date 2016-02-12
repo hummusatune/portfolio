@@ -77,12 +77,12 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border: 3px solid #B6C9CD;
-  transition: .3s ease-in-out;
+  transition: all .2s;
 }
 header .profile-image:hover {
-  background-color: #B6C9CD;
-  background-blend-mode: multiply;
+  width: 300px;
 }
+
 .tag {
   background-color: #594649;
   color: white;
@@ -101,6 +101,11 @@ header .profile-image:hover {
   max-width: 500px;
   text-align: left;
   background: #fff;
+  transition: all .2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .cardTitle {
@@ -129,6 +134,20 @@ ul.skills {
   background: #594649;
 }
 
+.galleryWrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 #gallery {
   margin: 0;
   padding-top: 60px;
@@ -143,17 +162,13 @@ ul.skills {
   color: #594649;
 }
 
-#gallery li a p {
-  margin: 0;
-  padding: 5%;
-  font-size: 0.75em;
-  color: #594649;
+#gallery img {
+  max-width: 100%;
+  transition: all .2s ease-in-out;
 }
 
-.galleryWrapper {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 5%;
+#gallery img:hover {
+  transform: scale(1.1);
 }
 
 footer {
@@ -216,13 +231,17 @@ a.social:hover {
       margin: 0 auto;
   }
 
+}
+
+/*Styles for smaller screens */
+@media screen and (min-width: 399px) {
+
   header {
     min-height: 470px;
   }
 
   .nav {
     max-width: 1200px;
-    padding: 0 30px;
   }
 
   main p {
@@ -232,6 +251,7 @@ a.social:hover {
   footer {
     font-size: 1.3em;
     margin: 40px auto;
+    padding: 20px 0 20px 0;
   }
 
   #gallery li {
