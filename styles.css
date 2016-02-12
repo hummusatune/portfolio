@@ -138,10 +138,6 @@ ul.skills {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 5%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   flex-flow: row wrap;
