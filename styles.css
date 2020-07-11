@@ -68,7 +68,8 @@ a:hover {
 header {
   text-align: center;
   overflow: hidden;
-  background: url(images/notomRoad1100x474.jpg) #EEEEEE no-repeat center center fixed; 
+  /* Image by Comfreak from Pixabay */
+  background: url(images/arooo.jpg) #EEEEEE no-repeat center center fixed;
   background-size: cover;
   padding-top: 60px;
 }
@@ -129,7 +130,7 @@ ul.skills {
 
 .skills li {
   display: inline-block;
-  background: #fe5230;
+  background: #594649;
   color: white;
   padding: 5px 10px;
   margin: 2px;
@@ -173,7 +174,7 @@ ul.skills {
 }
 
 footer {
-  width: 45%;
+  width: 88%;
   min-height: 30px;
   clear: both;
   padding: 20px 0 20px 20px;
@@ -225,23 +226,30 @@ a.social:hover {
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex; 
-      max-width: 1200px;
+      max-width: 1100px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
-      margin: 0 auto;
+      margin: 40px auto 0 auto;
   }
 
+  header {
+    min-height: 500px;
+  }
+
+  footer {
+    width: 70%;
+  }
 }
 
 /*Styles for smaller screens */
 @media screen and (min-width: 399px) {
 
-  header {
+  /* header {
     min-height: 470px;
-  }
+  } */
 
   .nav {
-    max-width: 1200px;
+    max-width: 1100px;
   }
 
   main p {
@@ -261,5 +269,4 @@ a.social:hover {
   #gallery li:nth-child(3n + 1) {
     clear: left;
   }
-
 }
