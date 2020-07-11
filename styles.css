@@ -20,6 +20,7 @@ a {
   text-decoration: none;
   color: #594649;
 }
+
 a:hover {
   color: #594649;
 }
@@ -33,6 +34,7 @@ a:hover {
   position: fixed;
   text-align: center;
 }
+
 .nav {
   display: flex;
   justify-content: space-around;
@@ -51,12 +53,15 @@ a:hover {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+
 .nav li {
   padding: 5px 10px 10px 10px;
 }
+
 .nav a {
   transition: all .5s;
 }
+
 .nav a:hover {
   color: #788bff;
 }
@@ -73,6 +78,7 @@ header {
   background-size: cover;
   padding-top: 60px;
 }
+
 header {
   line-height: 1.5;
 }
@@ -84,8 +90,16 @@ header .profile-image {
   border: 3px solid #949bff;
   transition: all .2s ease-in-out;
 }
+
 header .profile-image:hover {
   transform: scale(1.1);
+}
+
+.headerFlex {
+  display: flex;
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .tag {
@@ -94,15 +108,18 @@ header .profile-image:hover {
   padding: 10px;
   display: table;
   margin: 10px auto;
-} 
+}
+
 .location {
   background-color: white;
   color: #594649;
   cursor: url(images/my-cursor.png), auto;
+  margin: 10px;
+  padding: 10px;
 }
 
 .card {
-  margin: 30px;
+  margin: 20px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
@@ -140,45 +157,28 @@ ul.skills {
   background: #788bff;
 }
 
-.galleryWrapper {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 5%;
+.gallery {
   display: flex;
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   flex-flow: row wrap;
   justify-content: center;
 }
 
-#gallery {
-  margin: 0;
-  padding-top: 60px;
-  list-style: none;
-}
-
-#gallery li {
-  float: left;
-  width: 45%; /* Gives a total of %10 from the remainder */
-  margin: 2.5%;
-  background-color: #f2f2f2;
-  color: #594649;
-}
-
-#gallery img {
+.gallery img {
   max-width: 100%;
   transition: all .2s ease-in-out;
 }
 
-#gallery img:hover {
+.gallery img:hover {
   transform: scale(1.1);
 }
 
 footer {
-  width: 88%;
+  flex-shrink: 0;
   min-height: 30px;
   clear: both;
   padding: 20px 0 20px 20px;
-  background-color: #fff;
+  background-color: #f2f2f2;
 }
 
 footer .copyright {
@@ -210,47 +210,33 @@ a.social {
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
+
 a.github {
   background-image: url(images/github.svg);
 }
+
 a.social:hover {
   opacity: 1;
 }
+
 .clearfix {
   clear: both;
 }
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
-  .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
-      max-width: 1100px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 40px auto 0 auto;
-  }
 
   header {
     min-height: 500px;
   }
 
-  footer {
-    width: 70%;
+  .location {
+    width: 50%;
   }
 }
 
 /*Styles for smaller screens */
 @media screen and (min-width: 399px) {
-
-  /* header {
-    min-height: 470px;
-  } */
-
-  .nav {
-    max-width: 1100px;
-  }
 
   main p {
     line-height: 1.6em;
@@ -260,13 +246,5 @@ a.social:hover {
     font-size: 1.3em;
     margin: 40px auto;
     padding: 20px 0 20px 0;
-  }
-
-  #gallery li {
-    width: 28.33333%
-  }
-  
-  #gallery li:nth-child(3n + 1) {
-    clear: left;
   }
 }
