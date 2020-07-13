@@ -106,7 +106,6 @@ header .profile-image:hover {
   background-color: #788bff;
   color: white;
   padding: 10px;
-  display: table;
   margin: 10px auto;
 }
 
@@ -114,8 +113,12 @@ header .profile-image:hover {
   background-color: white;
   color: #594649;
   cursor: url(images/my-cursor.png), auto;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
+}
+
+main p {
+  line-height: 1.6em;
 }
 
 .card {
@@ -174,10 +177,8 @@ ul.skills {
 }
 
 footer {
-  flex-shrink: 0;
   min-height: 30px;
   clear: both;
-  padding: 20px 0 20px 20px;
   background-color: #f2f2f2;
 }
 
@@ -226,25 +227,39 @@ a.social:hover {
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
 
+  body {
+    display: flex;
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    flex-flow: column;
+  }
+
+  .bigContentWrapper {
+    flex: 1 0 auto;
+  }
+
   header {
     min-height: 500px;
   }
 
-  .location {
-    width: 50%;
+  .headerFlex {
+    display: flex;
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    flex-flow: column wrap;
+    justify-content: center;
   }
-}
 
-/*Styles for smaller screens */
-@media screen and (min-width: 399px) {
+  .location {
+    margin: auto;
+  }
 
-  main p {
-    line-height: 1.6em;
+  .flex {
+    display: flex;
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    flex-flow: row wrap;
+    justify-content: center;
   }
 
   footer {
-    font-size: 1.3em;
-    margin: 40px auto;
-    padding: 20px 0 20px 0;
+    margin-top: auto;
   }
 }
