@@ -233,10 +233,6 @@ a.social:hover {
     flex-flow: column;
   }
 
-  .bigContentWrapper {
-    flex: 1 0 auto;
-  }
-
   header {
     min-height: 500px;
   }
@@ -259,7 +255,12 @@ a.social:hover {
     justify-content: center;
   }
 
+  .gallery {
+    max-width: 900px;
+    margin: 1em auto 0;
+  }
+
   footer {
-    margin-top: auto;
+    margin-top: 20vh;
   }
 }
